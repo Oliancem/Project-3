@@ -16,13 +16,16 @@ def morpion():
          afficherPlateau(plateau)
          print("Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
          move = int(input()) - 1
+
+         # Si la case que le joueur a choisit est vide, on remplace l'esapce vide par le X ou le O.
          if plateau[move] == " ":
             plateau[move] = joueur
             tour += 1
          else:
             print("Cette case est déjà occupée, choisissez-en une autre.")
             continue
-        
+         
+         # Toutes les combinaisons gagnantes
          if plateau[0] == plateau[1] == plateau[2] != " " \
          or plateau[3] == plateau[4] == plateau[5] != " " \
          or plateau[6] == plateau[7] == plateau[8] != " " \
