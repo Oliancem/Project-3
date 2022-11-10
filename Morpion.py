@@ -35,7 +35,7 @@ def morpion():
              break
                
          if tour == 9:
-             print("Égalité")
+             print("Personne n'a gagné !")
              break
                
          joueur = "O" if joueur == "X" else "X"
