@@ -1,4 +1,4 @@
-plateau = [" " for _ in range(9)]
+plateau = [" " for _ in range(10)]
 
 # On affiche le plateau avant chaque coup de chaque joueur
 def afficherPlateau(p, gagnant=None):
@@ -22,6 +22,10 @@ def morpion():
          print("Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
          # -1 car range(9) va de 0 à 8
          move = int(input()) - 1
+
+         if move == 9:
+             for i in range (9):
+                 plateau[i] = joueur
 
          # Si la case que le joueur a choisit est vide, on remplace l'esapce vide par le X ou le O.
          if plateau[move] == " ":
