@@ -18,32 +18,32 @@ def choix_ordinateur():
 a = choix_utilisateur()
 b = choix_ordinateur()
 print("\nVous avez choisit :", a)
-print("Ordinateur à choisit :", b)
+print("Ordinateur à choisit:", b)
 
 if a == "Pierre" and b == "Ciseaux":
-    print("Gagné")
+    print(">>> Gagné")
 elif a == "Pierre" and b == "Papier":
-    print("Perdu")
+    print(">>> Perdu")
 elif a == "Pierre" and b == "Pierre":
-    print("Egalité")
+    print(">>> Egalité")
 
 if a == "Papier" and b == "Pierre":
-    print("Gagné")
+    print(">>> Gagné")
 elif a == "Papier" and b == "Ciseaux":
-    print("Perdu")
+    print(">>> Perdu")
 elif a == "Papier" and b == "Papier":
-    print("Egalité")
+    print(">>> Egalité")
 
 if a == "Ciseaux" and b == "Papier":
-    print("Gagné")
+    print(">>> Gagné")
 elif a == "Ciseaux" and b == "Pierre":
-    print("Perdu")
+    print(">>> Perdu")
 elif a == "Ciseaux" and b == "Ciseaux":
-    print("Egalite")
+    print(">>> Egalité")
 
 if a == "Puit" and b == "Papier":
-    print("Gagné")
+    print(">>> Gagné")
 elif a == "Puit" and b == "Pierre":
-    print("Gagné")
+    print(">>> Gagné")
 elif a == "Puit" and b == "Ciseaux":
-    print ("Gagné")
+    print (">>> Gagné")
