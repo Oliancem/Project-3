@@ -1,7 +1,7 @@
 from random import *
 
 def choix_utilisateur():
-    joueur = input("Choisir entre : Pierre / Papier / Ciseaux / Puit:\n")
+    joueur = input("Choisir entre : Pierre / Papier / Ciseaux :\n")
     while joueur not in ["Pierre","Papier","Ciseaux","Puit"]:
         joueur = input("Pierre\nPapier\nCiseaux\nPuit\n")
     return(joueur)
