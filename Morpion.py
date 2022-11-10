@@ -14,15 +14,15 @@ def morpion():
         tour = 0
         while True:
          afficherPlateau(plateau)
-         print("> Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
+         print("Tour du joueur " + joueur + ". Entrez un nombre de 1 à 9.")
          move = int(input()) - 1
          if plateau[move] == " ":
             plateau[move] = joueur
             tour += 1
          else:
-            print("! Case déjà occupée, choisissez-en une autre.")
+            print("Cette case est déjà occupée, choisissez-en une autre.")
             continue
-               
+        
          if plateau[0] == plateau[1] == plateau[2] != " " \
          or plateau[3] == plateau[4] == plateau[5] != " " \
          or plateau[6] == plateau[7] == plateau[8] != " " \
