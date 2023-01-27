@@ -1,3 +1,4 @@
+
 plateau = [" " for _ in range(10)]
 
 # On affiche le plateau avant chaque coup de chaque joueur
